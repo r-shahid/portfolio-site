@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- JS, Popper.js, and jQuery -->
+		<script
+			src="http://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- CSS only -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+			integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+			crossorigin="anonymous"
+		/>
+		<!-- my stylesheet -->
+		<link rel="stylesheet" href="styles.css" />
+		<!-- fontawesome -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+		/>
+	</head>
+	<body>
+		<nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+			<a class="navbar-brand" href="#">LOGO</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<img class="hero-img" src="./images/hero_img.png" alt="hero-image" />
+		<div class="about-me">
+			<h1>HI I'M RIANA</h1>
+			<p>
+				I'm an NYU graduate with a BA in Mathematics. When I'm not coding, I
+				like to work across many mediums, from different kinds of paint to yarn
+				and thread. From a young age, I always gravitated towards art and
+				expression, whether that’s making my own art or experiencing that of
+				others. Given the ongoing pandemic, I have been working through my yarn
+				stash by knitting socks for myself and my family. I am an avid learner
+				and am always trying out something new!
+			</p>
+		</div>
+		<h1 class="project-section" id="Projects">PROJECTS</h1>
+		<div class="projects"></div>
+		<div class="all-skills">
+			<i class="fab fa-html5 fa-3x"></i>
+			<i class="fab fa-css3-alt fa-3x"></i>
+			<i class="fab fa-js-square fa-3x"></i>
+			<i class="fab fa-react fa-3x"></i>
+			<img class="jquery-icon" src="./images/jquery.png" alt="jQuery" />
+			<i class="fab fa-bootstrap fa-3x"></i>
+			<i class="fab fa-node-js fa-3x"></i>
+			<img class="jquery-icon" src="./images/mongo.png" alt="jQuery" />
+			<img class="jquery-icon" src="./images/postgreSQL.png" alt="jQuery" />
+			<img class="jquery-icon" src="./images/ruby.png" alt="jQuery" />
+		</div>
+		<div class="contact" id="Contact">
+			<div id="form">
+				<h3>Get in touch.</h3>
+				<div class="contactform">
+					<form action="https://formspree.io/xoqpapnd" method="POST">
+						<input type="text" placeholder="YOUR NAME" name="_name" />
+						<input type="text" placeholder="YOUR EMAIL" name="_replyto" />
+						<textarea placeholder="YOUR MESSAGE" name="message"></textarea>
+						<br />
+						<input class="submit" type="submit" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="desk-footer">
+				<div class="desk-footer-links">
+					<p>CONTACT</p>
+					<ul>
+						<li>
+							<a
+								class="far fa-envelope email"
+								href="mailto:someone@example.com"
+							></a>
+							info@rianashahid.com
+						</li>
+						<li>
+							<a href="https://github.com/r-shahid/" class="fab fa-github"></a>
+							github.com/r-shahid
+						</li>
+						<li>
+							<a
+								href="https://www.linkedin.com/in/rianashahid/"
+								class="fab fa-linkedin-in"
+							></a>
+							linkedin.com/in/rianashahid
+						</li>
+						<li>
+							<a
+								href="https://twitter.com/rianashahid"
+								class="fab fa-twitter"
+							></a>
+							twitter.com/rianashahid
+						</li>
+					</ul>
+				</div>
+				<div class="recent-posts">
+					<p>RECENT POSTS</p>
+					<div class="media">
+						<img src="./images/post_thumbnail.png" class="mr-3" alt="..." />
+						<div class="media-body">
+							<h5 class="mt-0">Media heading</h5>
+						</div>
+					</div>
+					<div class="media">
+						<img src="./images/post_thumbnail.png" class="mr-3" alt="..." />
+						<div class="media-body">
+							<h5 class="mt-0">Media heading</h5>
+						</div>
+					</div>
+				</div>
+				<div class="instagram-feed">
+					<p>INSTAGRAM</p>
+					<br />
+					<div id="curator-feed-default-feed-layout">
+						<a
+							href="https://curator.io"
+							target="_blank"
+							class="crt-logo crt-tag"
+						></a>
+					</div>
+
+					<script type="text/javascript">
+						(function () {
+							var i,
+								e,
+								d = document,
+								s = 'script';
+							i = d.createElement('script');
+							i.async = 1;
+							i.src =
+								'https://cdn.curator.io/published/ef0449f0-eaf5-4b42-bb34-8187ba041a89.js';
+							e = d.getElementsByTagName(s)[0];
+							e.parentNode.insertBefore(i, e);
+						})();
+					</script>
+				</div>
+			</div>
+			<div class="footer-links">
+				<ul>
+					<li>
+						<a
+							class="far fa-envelope email"
+							href="mailto:someone@example.com"
+						></a>
+					</li>
+					<li>
+						<a href="https://github.com/r-shahid/" class="fab fa-github"></a>
+					</li>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/rianashahid/"
+							class="fab fa-linkedin-in"
+						></a>
+					</li>
+					<li>
+						<a
+							href="https://twitter.com/rianashahid"
+							class="fab fa-twitter"
+						></a>
+					</li>
+				</ul>
+			</div>
+			<p class="footer-end">&#169; Riana Shahid 2020</p>
+		</footer>
+	</body>
+	<script src="app.js" charset="utf-8"></script>
+</html>

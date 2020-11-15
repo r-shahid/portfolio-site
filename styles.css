@@ -1,7 +1,51 @@
+:root {
+	--tan: #EBE6D1;
+	--red: #C24332;
+	--navy: #2E303F;
+	--blue: #63948C;
+}
+
 body {
 	/* margin: auto; */
-	/* background-color: pink; */
-	padding: 20px;
+	background-color: var(--tan);
+	/* padding: 20px; */
+}
+
+nav {
+	background-color: var(--tan);
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav, .navbar-brand, i{
+	padding: unset !important;
+}
+
+nav li {
+	padding: 0 10px;
+}
+
+nav .navbar-brand {
+	margin: 5px;
+}
+
+nav img {
+	height: 50px;
+	margin: 0px;
+}
+
+nav a {
+	color: var(--blue);
+	font-weight: bold;
+	letter-spacing: .7px;
+}
+
+nav a:hover {
+	color: var(--navy);
+}
+
+nav button i {
+	color: var(--blue);
+	margin: unset;
 }
 
 .hero-img {
@@ -9,13 +53,24 @@ body {
 }
 
 .about-me {
-	background-color: lavenderblush;
+	background-color: var(--tan);
 	padding: 20px;
 }
 
-.about-me h1 {
+.about-me h1, .project-section {
 	text-align: center;
 	padding: 10px 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 46px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: var(--blue)
+}
+
+.about-me p {
+	font-family: 'Montserrat', sans-serif;
+	color: var(--navy);
+	font-size: 18px;
 }
 
 .project-section {
@@ -33,6 +88,7 @@ body {
 .embed-projects img {
 	display: block;
 	margin: auto;
+	width: 250px;
 }
 
 .project-title {
@@ -47,7 +103,37 @@ body {
 .desc,
 .skills {
 	padding: 0 0 0 25px;
-	background-color: lightpink;
+}
+
+.project-title {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
+	letter-spacing: 1px;
+	color: var(--red)
+}
+
+.desc {
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	color: var(--navy)
+}
+
+.skills {
+	font-size: 14px;
+	font-family: 'Monstserrat', sans-serif;
+	margin: 5px 0;
+	color: var(--blue)
+}
+
+.project-link {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: var(--red);
+}
+
+.project-link:hover {
+	text-decoration: none;
+	color: var(--navy)
 }
 
 .all-skills {
@@ -70,13 +156,17 @@ i {
 
 .contact {
 	margin-top: 10px;
+	padding: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
 	/* background-color: lightsteelblue; */
 }
 
 .contact h3 {
-	font-size: 20px;
+	font-size: 26px;
 	font-weight: bold;
 	text-align: center;
+	color: var(--blue);
 }
 
 .contact form {
@@ -92,8 +182,19 @@ textarea {
 
 .contact .submit {
 	width: 100px;
-	padding: 5px 10px;
+	padding: 10px 10px;
+	font-size: 18px;
+	font-weight: bold;
 	box-sizing: unset;
+	color: var(--tan);
+	background-color: var(--red);
+	border: 1px solid var(--red);
+}
+
+.contact .submit:hover {
+	background-color: var(--tan);
+	color: var(--blue);
+	border: 1px solid var(--navy)
 }
 
 footer {
@@ -118,18 +219,24 @@ footer .footer-links ul {
 }
 
 @media screen and (min-width: 580px) {
-	.about-me h1 {
+	.about-me h1, .project-section {
 		text-align: left;
+		font-size: 30px;
+	}
+
+	.about-me p{
+		font-size: 20px;
 	}
 
 	.project-section {
 		text-align: left;
+		margin-left: 20px;
 	}
 
 	.projects {
 		margin: 20px 0;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		row-gap: 30px;
 	}
 
@@ -169,12 +276,21 @@ footer .footer-links ul {
 }
 
 @media screen and (min-width: 1350px) {
+	.about-me h1, .project-section{
+		font-size: 50px;
+	}
+
+	.about-me p {
+		font-size: 25px;
+	}
+
 	footer {
 		text-align: unset;
 	}
 
 	footer .desk-footer {
 		/* background-color: red; */
+		display: unset;
 		display: grid;
 		margin-bottom: 20px;
 		display: grid;

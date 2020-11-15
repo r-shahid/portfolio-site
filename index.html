@@ -4,6 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="icon" 
+      type="image/png" 
+      href="./images/favicon.png">
 		<!-- JS, Popper.js, and jQuery -->
 		<script
 			src="http://code.jquery.com/jquery-3.5.1.js"
@@ -36,6 +39,7 @@
 		/>
 		<!-- my stylesheet -->
 		<link rel="stylesheet" href="styles.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 		<!-- fontawesome -->
 		<link
 			rel="stylesheet"
@@ -43,8 +47,8 @@
 		/>
 	</head>
 	<body>
-		<nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
-			<a class="navbar-brand" href="#">LOGO</a>
+		<nav class="navbar sticky-top navbar-expand-sm">
+			<a class="navbar-brand" href="#"><img src="./images/favicon.png" alt="logo" /></a>
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -54,30 +58,30 @@
 				aria-expanded="false"
 				aria-label="Toggle navigation"
 			>
-				<span class="navbar-toggler-icon"></span>
+				<span ><i class="fas fa-bars fa-2x"></i></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Home</a>
+						<a class="nav-link" href="#top">HOME</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
+						<a class="nav-link" href="#about">ABOUT</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Portfolio</a>
+						<a class="nav-link" href="#projects">PROJECTS</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Blog</a>
+						<a class="nav-link" href="https://rianashahid.com">BLOG</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link" href="#contact">CONTACT</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
-		<img class="hero-img" src="./images/hero_img.png" alt="hero-image" />
-		<div class="about-me">
+		<img class="hero-img" id="top" src="./images/hero_img.png" alt="hero-image" />
+		<div id="about" class="about-me">
 			<h1>HI I'M RIANA</h1>
 			<p>
 				I'm an NYU graduate with a BA in Mathematics. When I'm not coding, I
@@ -89,7 +93,7 @@
 				and am always trying out something new!
 			</p>
 		</div>
-		<h1 class="project-section" id="Projects">PROJECTS</h1>
+		<h1 class="project-section" id="projects">PROJECTS</h1>
 		<div class="projects"></div>
 		<div class="all-skills">
 			<i class="fab fa-html5 fa-3x"></i>
@@ -103,16 +107,16 @@
 			<img class="jquery-icon" src="./images/postgreSQL.png" alt="jQuery" />
 			<img class="jquery-icon" src="./images/ruby.png" alt="jQuery" />
 		</div>
-		<div class="contact" id="Contact">
+		<div class="contact" id="contact">
 			<div id="form">
-				<h3>Get in touch.</h3>
+				<h3>GET IN TOUCH</h3>
 				<div class="contactform">
 					<form action="https://formspree.io/xoqpapnd" method="POST">
 						<input type="text" placeholder="YOUR NAME" name="_name" />
 						<input type="text" placeholder="YOUR EMAIL" name="_replyto" />
 						<textarea placeholder="YOUR MESSAGE" name="message"></textarea>
 						<br />
-						<input class="submit" type="submit" />
+						<input class="submit" value="SUBMIT" type="submit" />
 					</form>
 				</div>
 			</div>
@@ -150,7 +154,7 @@
 					</ul>
 				</div>
 				<div class="recent-posts">
-					<p>RECENT POSTS</p>
+					<!-- <p>RECENT POSTS</p>
 					<div class="media">
 						<img src="./images/post_thumbnail.png" class="mr-3" alt="..." />
 						<div class="media-body">
@@ -162,7 +166,7 @@
 						<div class="media-body">
 							<h5 class="mt-0">Media heading</h5>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				<div class="instagram-feed">
 					<p>INSTAGRAM</p>

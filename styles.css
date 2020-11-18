@@ -320,6 +320,7 @@ footer .footer-links ul {
 
 	footer .instagram-feed {
 		padding: 0 50px;
+		max-width: 450px;
 	}
 
 	footer .footer-end {
